@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One|Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/invie.css"/>
+	<!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"> -->
+	<title>Invie</title>
+</head>
+<body id="body">
+	<section id="imagen_fondo" class="imagen_fondo"> <!--imagen de fondo-->
+		<header id="header" class="header"> <!--header-->
+			<div class="contenedor">
+				<figure class="logotipo"> <!-- logotipo -->
+					<img src="images/invie.png" srcset="images/invie2x.png" width="186" height="60" alt="Invie logotipo">
+				</figure>
+				<span class="burguer-button icon-menu" id="burguer-button"></span>
+				<nav class="menu" id="menu"> <!--menu-->
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="index.html#guitarras" onclick="hideMenu()">Guitarras</a>
+						</li>
+						<li>
+							<a href="precios.html">Precios</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section id="portada" class="portada contenedor"> <!-- portada -->
+			<h1 class="titulo">Guitarras <span>Invie</span>sibles</h1><!--titulo-->
+			<h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3><!--resumen-->
+			<a href="#guitarras" id="boton" class="boton-portada">Conoce más</a><!--boton-->
+		</section>
+	</section>
+	<section id="guitarras" class="guitarras contenedor"> <!--Guitarras-->
+		<h2>Nuestras guitarras</h2> <!--Titulo-->
+		<div class="video-demo">
+			<div class="video-responsive-cont">
+				<iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/R1dW8M4EqYY?start=150" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+		<article class="guitarra primera"><!--Guitarra 1-->
+			<img class="right" data-src="images/invie-acustica.png|images/invie-acustica2x.png" width="370" alt="img Guitarra Acústica">
+			<div class="contenedor-guitarra-a">
+				<h3 class="title-b">Invie Acústica</h3>
+				<ol>
+					<li>Estilo vintage</li>
+					<li>Madera pura</li>
+					<li>Incluye estuche invisible de aluminio</li>
+				</ol>
+			</div>
+		</article>
+		<article class="guitarra segunda"><!--Guitarra 2-->
+			<img class="left" data-src="images/invie-classic.png|images/invie-classic2x.png" width="370" alt="img Guitarra clásica">
+			<div class="contenedor-guitarra-b">
+				<h3 class="title-b">Invie Clásica</h3>
+				<ol>
+					<li>Estilo vintage</li>
+					<li>Liviana</li>
+					<li>Inicia tu camino como Rockstar</li>
+				</ol>
+			</div>
+		</article>
+	</section>
+	<footer class="footer"> <!-- footer -->
+		<div class="contenedor">
+			<div class="contacto"> <!-- info contacto -->
+				<img data-src="images/invie-white.png|images/invie-white2x.png" width="218" alt="logotipo blanco"/> <!-- imagen -->
+				<a href="tel:+573131235787"> <strong>Teléfono</strong> <span>3138569246</span> </a> <!-- telefono -->
+				<a href="mailto:contacto@invie.com"> <strong>E-mail</strong> <span>contacto@invie.com</span> </a><!-- email -->
+			</div>
+			<form class="formulario"><!-- formulario -->
+				<div class="col1">
+					<label for="nombre">Nombre</label>
+					<input type="text" required id="nombre" name="nombre"/>
+					<label for="email">E-mail</label>
+					<input type="email" required id="email" name="email" />
+					<div class="sexo">
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" checked="checked"/>Hombre
+						</label>
+						<label for="mujer">
+							<input type="radio" id="mujer" name="sexo"/>Mujer
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+								<input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked="checked"/>Cotización
+						</label>
+						<label for="reclamos">
+								<input type="checkbox" id="reclamos" name="intereses" value="reclamos"/>Reclamos
+						</label>
+						<label for="comentarios">
+								<input type="checkbox" id="comentarios" name="intereses" value="comentarios"/>Comentarios
+						</label>
+						<label for="otros">
+								<input type="checkbox" id="otros" name="intereses" value="otros"/>Otros
+						</label>
+					</div>
+				</div>
+				<div class="col2">
+					<label for="comentarios">Comentarios</label>
+					<textarea name="" id="comentarios" cols="27" rows="7"></textarea>
+					<input type="submit" class="boton-formulario" value="Enviar"/>
+				</div>
+			</form>
+		</div>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script src="js/codigo.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Patua+One|Poppins" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/invie.css"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Precios de nuestras guitarras</title>
+</head>
+<body class="precios" id="body">
+	<section id="imagen_fondo" class="imagen_fondo"> <!--imagen de fondo-->
+		<header id="header" class="header"> <!--header-->
+			<div class="contenedor">
+				<figure class="logotipo"> <!-- logotipo -->
+					<img src="https://raw.githubusercontent.com/platzi/desarrollo-web-online/master/images/invie.png" width="186" height="60" alt="Invie logotipo">
+				</figure>
+				<span class="burguer-button icon-menu" id="burguer-button"></span>
+				<nav class="menu" id="menu"> <!--menu-->
+					<ul>
+						<li>
+							<a href="index.html">Home</a>
+						</li>
+						<li>
+							<a href="index.html#guitarras">Guitarras</a>
+						</li>
+						<li>
+							<a href="precios.html">Precios</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</section>
+	<section class="tabla">
+		<div class="contenedor">
+			<table style="width: 100%">
+				<thead>
+					<tr>
+						<th>Modelo</th>
+						<th>Precio</th>
+						<th>Descripción</th>
+						<th>Modelo</th>
+						<th>Precio</th>
+						<th>Descripción</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Invie Classic</td>
+						<td>$100.000</td>
+						<td>Una guitarra muy pro!</td>
+						<td>Invie Classic</td>
+						<td>$100.000</td>
+						<td>Una guitarra muy pro!</td>
+					</tr>
+					<tr>
+						<td>Invie Classic</td>
+						<td>$100.000</td>
+						<td>Una guitarra muy pro!</td>
+						<td>Invie Classic</td>
+						<td>$100.000</td>
+						<td>Una guitarra muy pro!</td>
+					</tr>
+					<tr>
+						<td>Invie Acústica</td>
+						<td>$90.000</td>
+						<td>Una guitarra muy pro!</td>
+						<td>Invie Acústica</td>
+						<td>$90.000</td>
+						<td>Una guitarra muy pro!</td>
+					</tr>
+					<tr>
+						<td>Invie Custom</td>
+						<td>$150.000</td>
+						<td>Una guitarra muy pro!</td>
+						<td>Invie Custom</td>
+						<td>$150.000</td>
+						<td>Una guitarra muy pro!</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</section>
+	<footer class="footer"> <!-- footer -->
+		<div class="contenedor">
+			<div class="contacto"> <!-- info contacto -->
+				<img src="https://raw.githubusercontent.com/platzi/desarrollo-web-online/master/images/invie-white.png" width="218" alt="logotipo blanco"/> <!-- imagen -->
+				<a href="tel:+573131235787"> <strong>Teléfono</strong> <span>3138569246</span> </a> <!-- telefono -->
+				<a href="mailto:contacto@invie.com"> <strong>E-mail</strong> <span>contacto@invie.com</span> </a><!-- email -->
+			</div>
+			<form class="formulario"><!-- formulario -->
+				<div class="col1">
+					<label for="nombre">Nombre</label>
+					<input type="text" required id="nombre" name="nombre"/>
+					<label for="email">E-mail</label>
+					<input type="email" required id="email" name="email" />
+					<div class="sexo">
+						<label for="hombre">
+							<input type="radio" id="hombre" name="sexo" checked="checked"/>Hombre
+						</label>
+						<label for="mujer">
+							<input type="radio" id="mujer" name="sexo"/>Mujer
+						</label>
+					</div>
+					<div class="intereses">
+						<label for="cotizacion">
+								<input type="checkbox" id="cotizacion" name="intereses" value="cotizacion" checked="checked"/>Cotización
+						</label>
+						<label for="reclamos">
+								<input type="checkbox" id="reclamos" name="intereses" value="reclamos"/>Reclamos
+						</label>
+						<label for="comentarios">
+								<input type="checkbox" id="comentarios" name="intereses" value="comentarios"/>Comentarios
+						</label>
+						<label for="otros">
+								<input type="checkbox" id="otros" name="intereses" value="otros"/>Otros
+						</label>
+					</div>
+				</div>
+				<div class="col2">
+					<label for="comentarios">Comentarios</label>
+					<textarea name="" id="comentarios" cols="30" rows="7"></textarea>
+					<input type="submit" class="boton-formulario" value="Enviar"/>
+				</div>
+			</form>
+		</div>
+	</footer>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js" ></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+	<script src="js/codigo.js"></script>
+</body>
+</html>
