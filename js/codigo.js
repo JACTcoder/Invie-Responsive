@@ -52,3 +52,10 @@ gestos.on('swipeleft', hideMenu);
 
 var gestos = new Hammer($body);
 gestos.on('swiperight', showMenu);
+
+// Carga de Fuentes
+WebFont.load({
+    google: {
+      families: ['Poppins', 'Patua One']
+    }
+  });
