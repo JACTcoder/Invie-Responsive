@@ -447,6 +447,7 @@ input, textarea{
 	textarea{
 		width: 100%;
 		font-size: 18px;
+		font-family: "Arial";
 	}
 
 	.col1{
