@@ -600,6 +600,7 @@ input, textarea{
 	/* Guitarras */
 }
 
+/*fondo en pantalla retina*/
 @media screen and (-webkit-min-device-pixel-ratio: 2){
 	.imagen_fondo{
 		background-image: url("../images/background2x.png");
